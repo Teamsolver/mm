@@ -1,0 +1,57 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background-color: #1D1915;
+    
+}
+/* General Styling for About Us Section */
+.about-us-container {
+    max-width: 800px;
+    margin: 0 auto; /* Center align the section */
+    padding: 40px 20px;
+    background-color: #1D1915;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+
+}
+
+/* Heading Styles */
+.about-us-container h2 {
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Paragraph Styles */
+.about-us-container p {
+    font-size: 1.2em;
+    color:white;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+.about-us-container .cta-button {
+    display: block;
+    width: 200px;
+    margin: 30px auto;
+    padding: 10px 20px;
+    background-color: #06274d;
+    color: #fff;
+    text-align: center;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.about-us-container .cta-button:hover {
+    background-color: #2980b9;
+}
