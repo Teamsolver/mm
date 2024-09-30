@@ -1,0 +1,167 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+  
+    
+}
+body{
+    background-color: #06274d;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-color:#1D1915;
+    background-size: 100% 100%;
+    
+}
+
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo {
+    cursor: pointer;
+    color: aliceblue;
+}
+
+/* Navbar Styling */
+.nav__links {
+    list-style: none;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+/* Nav link hover with underline effect */
+.nav__links li a {
+    position: relative;
+    padding-bottom: 5px;
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    background: #0088a9; /* Accent color for underline */
+    transition: width 0.3s ease;
+    bottom: 0;
+    left: 0;
+}
+
+.nav__links li a:hover::after {
+    width: 100%; /* Underline expands to full width on hover */
+}
+
+.nav__links li a:hover {
+    color: #0088a9;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+/* Flexbox container for login and search */
+.login-search-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between login and search bar */
+}
+
+/* Stylish login button */
+button.login-btn {
+    padding: 10px 25px;
+    background-color: #0088a9;
+    border: none;
+    color:white;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Login button hover effect */
+button.login-btn:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+    box-shadow: 0 4px 15px rgba(0, 136, 169, 0.4); /* Add a slight shadow for depth */
+    transform: scale(1.05); /* Small scale effect on hover */
+}
+
+/* Search Section */
+.search-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Search bar styling */
+.search-bar {
+    width: 300px;
+    padding: 12px 20px;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+/* Search bar focus effect */
+.search-bar:focus {
+    border-color: #0088a9;
+}
+
+/* Search button styling */
+.search-btn {
+    background-color: #0088a9;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 50%;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Search button hover effect */
+.search-btn:hover {
+    background-color: rgba(0, 136, 169, 0.9);
+}
+
+/* Optional search icon styling */
+.search-btn i {
+    color: white;
+    font-size: 18px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .login-search-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .search-bar {
+        width: 100%; /* Make search bar full width on small screens */
+    }
+}
